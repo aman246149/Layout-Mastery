@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="topimg">
+      <img src="./images/desktop/image-header.jpg" alt="" height="100%" width="100%" style="object-fit: cover;">
+    <div class="navbar">
+      <h1 class="nav-title">SunnySide</h1>
+      <span class="nav-about">About</span>
+      <span class="nav-services">Services</span>
+      <span class="nav-projects">Projects</span>
+      <button class="nav-button"><span id="contact">Contact</span></button>
+      <span class="hamburger"  onclick="myFunction()"> <img src="./images/icon-hamburger.svg" alt="" >
+      </span>
+    </div>
+    <h1 class="creative"><span id="creative">WE ARE CREATIVES</span></h1>
+    </div>
+
+    <div class="image1section">
+      <div class="leftpart">
+        <h1>        Transform your brand
+        </h1>
+      <span class="leftpartcontent">  We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+        </span>
+        <h1>        Learn more
+        </h1>
+      </div>
+  
+      <div class="rightpart">
+        <img src="./images/desktop/image-transform.jpg" alt="" srcset="">
+      </div>
+
+      <div class="leftpartglass">
+        <img src="./images/desktop/image-stand-out.jpg" alt="" srcset="">
+
+      </div>
+  
+      <div class="rightpartglass">
+        <h1>        Stand out to the right audience
+        </h1>
+<span class="rightpartcontent">        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+</span>      
+        <h1>Learn more</h1>
+      </div>
+  
+      <div class="leftapple">
+        <img src="./images/desktop/image-graphic-design.jpg" alt="">
+        
+      </div>
+  
+      <div class="rightorange">
+        <img src="./images/desktop/image-photography.jpg" alt="">
+
+      </div>
+    </div>
+
+   
+
+    <div class="testimonial">
+      <div class="card1">
+        <div class="cardimg">
+
+        </div>
+      <span class="cardpara">
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+  
+      </span>
+      <div class="cardtitle">
+        Emily R.
+  Marketing Director
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="cardimg2">
+
+      </div>
+    <span class="cardpara">
+      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+    
+    </span>
+    <div class="cardtitle">
+      Thomas S.
+      Chief Operating Officer
+    </div>
+  </div>
+
+  <div class="card1">
+    <div class="cardimg3">
+
+    </div>
+  <span class="cardpara">
+   
+  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+  
+  </span>
+  <div class="cardtitle">
+    Jennie F.
+  Business Owner
+  </div>
+</div>
+
+    </div>
+
+    <div class="imagegallery">
+        <img id="img1" src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+        <img id="img2"src="./images/desktop/image-gallery-orange.jpg" alt="">
+        <img id="img3"src="./images/desktop/image-gallery-cone.jpg" alt="">
+        <img id="img4" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+
+    <div class="footer">
+      <h1>SunnySide</h1>
+        <div class="footercenter">
+          <span>About</span>
+          <span>Services</span>
+          <span>Projects</span>
+        </div>
+        <div class="icons-container">
+          <img src="./images/icon-twitter.svg" alt="">
+          <img src="./images/icon-facebook.svg" alt="">
+          <img src="./images/icon-instagram.svg" alt="">
+          <img src="./images/icon-pinterest.svg" alt="">
+        </div>
+    </div>
+  </div>
+
+
+  <!-- About
+ 
+
+  
+
+
+
+  Photography
+  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+  Client testimonials
+
+  
+
+
+
+
+ 
+  Contact -->
+  <script>
+    function myFunction() {
+      console.log("running")
+      let about = document.querySelector(".nav-title");
+      let services = document.querySelector(".nav-about");
+      let projects = document.querySelector(".nav-services");
+      let contacts= document.querySelector(".nav-projects");
+      let button= document.querySelector(".nav-button");
+
+        about.style.visibility = "visible";
+        services.style.visibility = "visible";
+        projects.style.visibility = "visible";
+        contacts.style.visibility = "visible";
+        button.style.visibility = "visible";
+   
+    }
+    </script>
+
+</body>
+</html>
